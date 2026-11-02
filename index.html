@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNU LEARNING PORTFOLIO — Nguyễn Tuấn Hưng (2071080075)</title>
+
+  <!-- Google Font: Montserrat (Đồng nhất toàn trang giống trong slide) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-track">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Floating Glass Navbar -->
+  <header class="floating-navbar-wrapper">
+    <nav class="floating-navbar" aria-label="Điều hướng chính">
+      <a href="#hero" class="nav-brand" data-smooth-scroll>
+        <img src="Logo trường Đại Nam.png" alt="Logo Đại Nam" />
+        <span>DNU PORTFOLIO</span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-glass-indicator" aria-hidden="true"></li>
+        <li><a href="#hero" class="nav-link active" data-smooth-scroll>Trang bìa</a></li>
+        <li><a href="#about" class="nav-link" data-smooth-scroll>Giới thiệu</a></li>
+        <li><a href="#part-1" class="nav-link" data-smooth-scroll>P1. Tôi hiểu mình</a></li>
+        <li><a href="#part-2" class="nav-link" data-smooth-scroll>P2. Tôi quản trị</a></li>
+        <li><a href="#part-3" class="nav-link" data-smooth-scroll>P3. Mục tiêu</a></li>
+        <li><a href="#part-4" class="nav-link" data-smooth-scroll>P4. Học ĐH &amp; Thích ứng</a></li>
+        <li><a href="#part-5" class="nav-link" data-smooth-scroll>P5. Sử dụng AI</a></li>
+        <li><a href="#part-6" class="nav-link" data-smooth-scroll>P6. Giao tiếp</a></li>
+        <li><a href="#part-7" class="nav-link" data-smooth-scroll>P7. Cải thiện</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Floating Personal Social Links (Right Corner) -->
+  <aside class="social-floating-dock" aria-label="Liên kết mạng xã hội cá nhân">
+    <a
+      href="https://www.facebook.com/NguyenTuanHung.abcxyz"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-dock-btn social-fb"
+      aria-label="Facebook Nguyễn Tuấn Hưng"
+    >
+      <span class="social-dock-label">Facebook</span>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+      </svg>
+    </a>
+
+    <a
+      href="https://www.instagram.com/nth.abcxyz/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-dock-btn social-ig"
+      aria-label="Instagram Nguyễn Tuấn Hưng"
+    >
+      <span class="social-dock-label">Instagram</span>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+      </svg>
+    </a>
+
+    <a
+      href="https://www.tiktok.com/@nth.abcxyz"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-dock-btn social-tt"
+      aria-label="TikTok Nguyễn Tuấn Hưng"
+    >
+      <span class="social-dock-label">TikTok</span>
+      <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Interactive Silk Aurora WebGL Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Main Page Wrapper -->
+  <main class="page-wrapper">
+    <!-- ====================================================================
+         TRANG 1: TRANG BÌA (HERO SECTION)
+         ==================================================================== -->
+    <section id="hero" class="section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: University Identity & Portfolio Title -->
+          <div class="hero-content reveal-up">
+            <div class="hero-university-header">
+              <div class="hero-logo-box">
+                <img src="Logo trường Đại Nam.png" alt="Logo Trường Đại học Đại Nam" />
+              </div>
+              <div class="hero-uni-text">
+                <span class="hero-uni-name">TRƯỜNG ĐẠI HỌC ĐẠI NAM</span>
+                <span class="hero-uni-dept">Khoa Đào tạo và Phát triển Kỹ năng mềm</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="hero-course-tag">DNU1006 - Kỹ năng mềm cơ bản</span>
+            </div>
+
+            <h1 class="hero-main-title">
+              <span class="split-word text-gradient-blue" style="transition-delay: 0.05s;">DNU</span>
+              <span class="split-word text-gradient-blue" style="transition-delay: 0.14s;">LEARNING</span>
+              <br />
+              <span class="split-word text-gradient-dnu" style="transition-delay: 0.23s;">PORTFOLIO</span>
+            </h1>
+
+            <div class="hero-cta-group">
+              <a href="#about" class="btn-primary" data-smooth-scroll>Khám phá hồ sơ</a>
+              <a href="#part-1" class="btn-secondary" data-smooth-scroll>Xem Phần 1 (SWOT)</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Student Identity Card -->
+          <div class="reveal-up" style="transition-delay: 0.15s;">
+            <div class="spotlight-card tilt-card student-id-card">
+              <div class="id-card-header">
+                <span class="id-card-title">Hồ Sơ Sinh Viên</span>
+              </div>
+
+              <div class="id-info-list">
+                <div class="id-info-row">
+                  <span class="id-info-label">Họ và tên</span>
+                  <span class="id-info-value">Nguyễn Tuấn Hưng</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Mã sinh viên</span>
+                  <span class="id-info-value">2071080075</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Lớp</span>
+                  <span class="id-info-value">Tự động hóa 20-01</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Ngành</span>
+                  <span class="id-info-value">Công nghệ kỹ thuật điều khiển và tự động hóa</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Khoa</span>
+                  <span class="id-info-value">Công nghệ bán dẫn</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Khóa</span>
+                  <span class="id-info-value">K20</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Tên học phần</span>
+                  <span class="id-info-value">DNU1006 - Kỹ năng mềm cơ bản</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Năm học</span>
+                  <span class="id-info-value">2026-2027</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Học kỳ theo lớp đang học</span>
+                  <span class="id-info-value">Học kỳ 1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TRANG GIỚI THIỆU BẢN THÂN (ABOUT SECTION)
+         ==================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-blue">TRANG GIỚI THIỆU BẢN THÂN</span>
+          </h2>
+        </div>
+
+        <div class="about-portfolio-grid">
+          <!-- Hàng trên: Trái 1 ảnh lớn (9:16) — Phải 2 mục (Thông tin cá nhân & Điều khiến tôi tự hào) -->
+          <div class="about-top-row">
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card photo-frame photo-large">
+                <img src="ảnh cá nhân 1.jpg" alt="Nguyễn Tuấn Hưng - Ảnh cá nhân 1" />
+              </div>
+            </div>
+
+            <div class="about-right-stack">
+              <!-- Mục 1: Thông tin cá nhân -->
+              <div class="reveal-up" style="transition-delay: 0.06s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Thông tin cá nhân</span>
+                  </div>
+                  <div class="id-info-list">
+                    <div class="id-info-row">
+                      <span class="id-info-label">Họ và tên</span>
+                      <span class="id-info-value">Nguyễn Tuấn Hưng</span>
+                    </div>
+                    <div class="id-info-row">
+                      <span class="id-info-label">Mã sinh viên</span>
+                      <span class="id-info-value">2071080075</span>
+                    </div>
+                    <div class="id-info-row">
+                      <span class="id-info-label">Lớp</span>
+                      <span class="id-info-value">Tự động hóa 20-01</span>
+                    </div>
+                    <div class="id-info-row">
+                      <span class="id-info-label">Khoa</span>
+                      <span class="id-info-value">Công nghệ bán dẫn</span>
+                    </div>
+                    <div class="id-info-row">
+                      <span class="id-info-label">Ngày sinh</span>
+                      <span class="id-info-value">24/07/2006</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mục 2: Điều khiến tôi tự hào -->
+              <div class="reveal-up" style="transition-delay: 0.12s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Điều khiến tôi tự hào</span>
+                  </div>
+                  <blockquote class="pride-blockquote">
+                    “Kiên trì với lựa chọn của bản thân, dùng thất bại để làm thành công trở nên có ý nghĩa.”
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hàng dưới: Trái mục Sở thích & Yêu thích — Phải 2 ảnh nhỏ (9:16) -->
+          <div class="about-bottom-row">
+            <div class="reveal-up" style="transition-delay: 0.16s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Sở thích &amp; Yêu thích</span>
+                </div>
+                <div class="id-info-list">
+                  <div class="id-info-row">
+                    <span class="id-info-label">Màu sắc yêu thích</span>
+                    <span class="id-info-value">Xanh dương</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Đồ ăn yêu thích</span>
+                    <span class="id-info-value">Cơm tấm</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Đồ uống yêu thích</span>
+                    <span class="id-info-value">Trà đào</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Loài vật yêu thích</span>
+                    <span class="id-info-value">Mèo</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Môn học yêu thích</span>
+                    <span class="id-info-value">Toán</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Địa điểm yêu thích</span>
+                    <span class="id-info-value">Biển</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Sở thích</span>
+                    <span class="id-info-value">Chơi game, nghe nhạc</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-small-photos">
+              <div class="reveal-up" style="transition-delay: 0.2s;">
+                <div class="spotlight-card tilt-card photo-frame photo-small">
+                  <img src="ảnh cá nhân 3.jpg" alt="Nguyễn Tuấn Hưng - Ảnh cá nhân 3" />
+                </div>
+              </div>
+              <div class="reveal-up" style="transition-delay: 0.25s;">
+                <div class="spotlight-card tilt-card photo-frame photo-small">
+                  <img src="ảnh cá nhân 2.jpg" alt="Nguyễn Tuấn Hưng - Ảnh cá nhân 2" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PHẦN 1: TÔI HIỂU MÌNH (TRANG 3)
+         ==================================================================== -->
+    <section id="part-1" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-blue">PHẦN 1. TÔI HIỂU MÌNH</span>
+          </h2>
+        </div>
+
+        <!-- SẢN PHẨM 1: SWOT CÁ NHÂN VÀ CHIẾN LƯỢC HÀNH ĐỘNG -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 1. SWOT cá nhân và chiến lược hành động</span>
+          </div>
+
+          <div class="grid-2col">
+            <!-- Điểm mạnh (Strengths) -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Điểm mạnh (Strengths)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span><strong>S1:</strong> Nền tảng toán học, tư duy tốt</span></li>
+                  <li><span><strong>S2:</strong> Biết sử dụng AI</span></li>
+                  <li><span><strong>S3:</strong> Thành thạo máy tính</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Điểm yếu (Weaknesses) -->
+            <div class="reveal-up" style="transition-delay: 0.06s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Điểm yếu (Weaknesses)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span><strong>W1:</strong> Kỹ năng lập trình còn kém</span></li>
+                  <li><span><strong>W2:</strong> Chưa có kiến thức ngành</span></li>
+                  <li><span><strong>W3:</strong> Tiếng Trung còn kém</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Cơ hội (Opportunities) -->
+            <div class="reveal-up" style="transition-delay: 0.12s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Cơ hội (Opportunities)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span><strong>O1:</strong> Các công cụ AI phát triển</span></li>
+                  <li><span><strong>O2:</strong> Các CLB học thuật, LAB</span></li>
+                  <li><span><strong>O3:</strong> Nhiều tài liệu, khóa học online</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Thách thức (Threats) -->
+            <div class="reveal-up" style="transition-delay: 0.18s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Thách thức (Threats)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span><strong>T1:</strong> Kiến thức cần học lớn</span></li>
+                  <li><span><strong>T2:</strong> Ngành cạnh tranh cao</span></li>
+                  <li><span><strong>T3:</strong> Nguy cơ phụ thuộc vào AI</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chiến lược ưu tiên -->
+          <div class="reveal-up" style="margin-top: 1.5rem;">
+            <div class="spotlight-card tilt-card student-id-card">
+              <div class="id-card-header">
+                <span class="id-card-title">Chiến lược ưu tiên</span>
+              </div>
+              <div class="id-info-list">
+                <div class="id-info-row">
+                  <span class="id-info-label">Kết hợp</span>
+                  <span class="id-info-value">S1, S2 + O1, O3: Nền tảng toán học, tư duy tốt, biết sử dụng AI + các công cụ AI phát triển, nhiều tài liệu, khóa học online.</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Chiến lược</span>
+                  <span class="id-info-value">Sử dụng tư duy để biến AI thành gia sư giúp học tập tốt hơn.</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Hành động</span>
+                  <span class="id-info-value">Nhờ AI tóm tắt, dạy bài, giải thích những thứ khó hiểu.</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Thời điểm</span>
+                  <span class="id-info-value">Buổi tối mỗi ngày.</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Nguồn lực</span>
+                  <span class="id-info-value">Tài liệu chuyên ngành, khóa học online, máy tính, Gemini Pro.</span>
+                </div>
+                <div class="id-info-row">
+                  <span class="id-info-label">Dấu hiệu tiến bộ</span>
+                  <span class="id-info-value">Hiểu bài, điểm số các học phần đại cương tăng cao.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PHẦN 2: TÔI QUẢN TRỊ BẢN THÂN (TRANG 4, 5)
+         ==================================================================== -->
+    <section id="part-2" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-dnu">PHẦN 2. TÔI QUẢN TRỊ BẢN THÂN</span>
+          </h2>
+        </div>
+
+        <!-- SẢN PHẨM 2: NHẬT KÝ THỜI GIAN VÀ MA TRẬN EISENHOWER -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 2. Nhật ký thời gian và Ma trận Eisenhower</span>
+          </div>
+
+          <div class="grid-2col">
+            <!-- Bảng 1: Nhật ký thời gian trong ngày -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Nhật ký thời gian trong ngày</span>
+                </div>
+                <div class="portfolio-table-wrap">
+                  <table class="portfolio-table">
+                    <thead>
+                      <tr>
+                        <th>Thời gian</th>
+                        <th>Hoạt động thực tế</th>
+                        <th>Thời lượng</th>
+                        <th>Nhóm công việc</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>6:00 - 7:00</td>
+                        <td>Vệ sinh cá nhân</td>
+                        <td>1 giờ</td>
+                        <td>CV1</td>
+                      </tr>
+                      <tr>
+                        <td>7:00 - 11:40</td>
+                        <td>Học sáng trên trường</td>
+                        <td>4 giờ 40 phút</td>
+                        <td>CV2</td>
+                      </tr>
+                      <tr>
+                        <td>11:40 - 12:40</td>
+                        <td>Về KTX, ăn trưa</td>
+                        <td>1 giờ</td>
+                        <td>CV1</td>
+                      </tr>
+                      <tr>
+                        <td>12:40 - 14:00</td>
+                        <td>Ngủ trưa</td>
+                        <td>1 giờ 20 phút</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>14:00 - 16:40</td>
+                        <td>Tự học buổi chiều</td>
+                        <td>2 giờ 40 phút</td>
+                        <td>CV2</td>
+                      </tr>
+                      <tr>
+                        <td>16:40 - 17:40</td>
+                        <td>Tắm rửa, ăn tối</td>
+                        <td>1 giờ</td>
+                        <td>CV1</td>
+                      </tr>
+                      <tr>
+                        <td>17:40 - 20:00</td>
+                        <td>Tự học buổi tối</td>
+                        <td>2 giờ 20 phút</td>
+                        <td>CV2</td>
+                      </tr>
+                      <tr>
+                        <td>20:00 - 0:00</td>
+                        <td>Chơi game, nghe nhạc</td>
+                        <td>4 giờ</td>
+                        <td>CV3</td>
+                      </tr>
+                      <tr>
+                        <td>0:00 - 6:00</td>
+                        <td>Ngủ</td>
+                        <td>6 giờ</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột phải: Tổng hợp nhóm công việc & Đánh giá -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div class="reveal-up" style="transition-delay: 0.08s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Nhóm công việc &amp; Tỉ lệ</span>
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-item">
+                      <div class="progress-top">
+                        <span class="progress-name">CV1: Sinh hoạt cá nhân</span>
+                        <span class="progress-meta">3 giờ • 18%</span>
+                      </div>
+                      <div class="progress-track">
+                        <div class="progress-fill" data-width="18%"></div>
+                      </div>
+                    </div>
+
+                    <div class="progress-item">
+                      <div class="progress-top">
+                        <span class="progress-name">CV2: Học tập &amp; phát triển bản thân</span>
+                        <span class="progress-meta">9 giờ 40 phút • 58%</span>
+                      </div>
+                      <div class="progress-track">
+                        <div class="progress-fill" data-width="58%"></div>
+                      </div>
+                    </div>
+
+                    <div class="progress-item">
+                      <div class="progress-top">
+                        <span class="progress-name">CV3: Sở thích, gia đình, xã hội</span>
+                        <span class="progress-meta">4 giờ • 24%</span>
+                      </div>
+                      <div class="progress-track">
+                        <div class="progress-fill fill-orange" data-width="24%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Những điểm đã làm tốt -->
+              <div class="reveal-up" style="transition-delay: 0.14s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Những điểm đã làm tốt</span>
+                  </div>
+                  <ul class="code-list">
+                    <li><span>Ưu tiên cao cho việc học tập và phát triển bản thân (CV2).</span></li>
+                    <li><span>Khung giờ sinh hoạt cá nhân (CV1) cố định, gọn gàng.</span></li>
+                    <li><span>Có ý thức nghỉ ngơi giữa ngày.</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Những điểm cần cải thiện -->
+              <div class="reveal-up" style="transition-delay: 0.2s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Những điểm cần cải thiện</span>
+                  </div>
+                  <ul class="code-list">
+                    <li><span>Thời gian giải trí (CV3) quá dài và diễn ra quá khuya.</span></li>
+                    <li><span>Ngủ đêm muộn và thiếu giờ, trong khi ngủ trưa hơi dài.</span></li>
+                    <li><span>Thiếu hoạt động rèn luyện thể chất và kết nối gia đình, xã hội.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRANG 5: MA TRẬN EISENHOWER -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Ma trận Eisenhower</span>
+          </div>
+
+          <div class="grid-2col">
+            <!-- Ô 1: Quan trọng & Khẩn cấp -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Việc khủng hoảng (Quan trọng &amp; Khẩn cấp)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span>Ôn thi giữa kỳ/cuối kỳ Giải tích, Đại số, Vật lý.</span></li>
+                  <li><span>Nộp bài Portfolio môn Kỹ năng mềm đúng hạn.</span></li>
+                  <li><span>Gửi bài tập về nhà môn tiếng Trung.</span></li>
+                </ul>
+                <div class="quadrant-action">→ Làm luôn.</div>
+              </div>
+            </div>
+
+            <!-- Ô 2: Quan trọng & Không khẩn cấp -->
+            <div class="reveal-up" style="transition-delay: 0.06s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Việc mục tiêu (Quan trọng &amp; Không khẩn cấp)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span>Học chắc Lập trình Python và Toán đại cương hàng tuần.</span></li>
+                  <li><span>Tìm hiểu về AutoCAD, bộ kit Arduino cơ bản.</span></li>
+                  <li><span>Duy trì việc học về AI để bắt kịp sự phát triển của AI.</span></li>
+                </ul>
+                <div class="quadrant-action">→ Làm có kế hoạch.</div>
+              </div>
+            </div>
+
+            <!-- Ô 3: Không quan trọng & Khẩn cấp -->
+            <div class="reveal-up" style="transition-delay: 0.12s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Việc đến hạn (Không quan trọng &amp; Khẩn cấp)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span>Chạy sự kiện CLB quá sức, trùng lịch tự học.</span></li>
+                  <li><span>Đi làm thêm (part-time) chân tay chiếm nhiều thời gian.</span></li>
+                  <li><span>Phản hồi hàng chục nhóm chat và săn điểm rèn luyện.</span></li>
+                </ul>
+                <div class="quadrant-action">→ Làm khi rảnh.</div>
+              </div>
+            </div>
+
+            <!-- Ô 4: Không quan trọng & Không khẩn cấp -->
+            <div class="reveal-up" style="transition-delay: 0.18s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Việc loại bỏ (Không quan trọng &amp; Không khẩn cấp)</span>
+                </div>
+                <ul class="code-list">
+                  <li><span>Thức khuya cày game, ngủ nướng bỏ tiết học sáng.</span></li>
+                  <li><span>Lướt mạng xã hội vô định hàng giờ ở KTX.</span></li>
+                </ul>
+                <div class="quadrant-action">→ Không làm.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PHẦN 3: TÔI BIẾT ĐẶT MỤC TIÊU VÀ HÀNH ĐỘNG (TRANG 6, 7, 8)
+         ==================================================================== -->
+    <section id="part-3" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-blue">PHẦN 3. TÔI BIẾT ĐẶT MỤC TIÊU VÀ HÀNH ĐỘNG</span>
+          </h2>
+        </div>
+
+        <!-- BÁNH XE MỤC TIÊU -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Bánh xe mục tiêu — 8 Khía cạnh cuộc sống</span>
+          </div>
+
+          <div class="wheel-layout">
+            <!-- Biểu đồ SVG Bánh xe mục tiêu tương tác -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Biểu đồ Bánh xe mục tiêu</span>
+                </div>
+                <div class="wheel-svg-container">
+                  <svg id="wheel-of-life-svg" viewBox="0 0 480 480" aria-label="Bánh xe mục tiêu"></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bảng điểm chi tiết 8 khía cạnh -->
+            <div class="reveal-up" style="transition-delay: 0.1s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Đánh giá 8 khía cạnh cuộc sống</span>
+                </div>
+                <div class="id-info-list" id="wheel-score-list">
+                  <div class="id-info-row wheel-score-row" data-sector="0">
+                    <span class="id-info-label">Gia đình</span>
+                    <span class="id-info-value">9 / 10</span>
+                  </div>
+                  <div class="id-info-row wheel-score-row" data-sector="1">
+                    <span class="id-info-label">Tài chính</span>
+                    <span class="id-info-value">6 / 10</span>
+                  </div>
+                  <div class="id-info-row wheel-score-row" data-sector="2">
+                    <span class="id-info-label">Giải trí</span>
+                    <span class="id-info-value">8 / 10</span>
+                  </div>
+                  <div class="id-info-row wheel-score-row" data-sector="3">
+                    <span class="id-info-label">Quan hệ</span>
+                    <span class="id-info-value">7 / 10</span>
+                  </div>
+                  <div class="id-info-row wheel-score-row" data-sector="4">
+                    <span class="id-info-label">Thiện nguyện</span>
+                    <span class="id-info-value">6 / 10</span>
+                  </div>
+                  <div class="id-info-row wheel-score-row" data-sector="5">
+                    <span class="id-info-label">Học tập</span>
+                    <span class="id-info-value">7 / 10</span>
+                  </div>
+                  <div class="id-info-row wheel-score-row" data-sector="6">
+                    <span class="id-info-label">Sự nghiệp</span>
+                    <span class="id-info-value">4 / 10</span>
+                  </div>
+                  <div class="id-info-row wheel-score-row" data-sector="7">
+                    <span class="id-info-label">Sức khỏe</span>
+                    <span class="id-info-value">4 / 10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SẢN PHẨM 3: MỤC TIÊU SMART -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 3. Mục tiêu SMART</span>
+          </div>
+
+          <div class="grid-3col">
+            <!-- Ngắn hạn -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">1. Ngắn hạn</span>
+                </div>
+                <ul class="code-list">
+                  <li>
+                    <span>1. Trong 3 tháng tới, đạt điểm trung bình các môn học từ 7,5/10 trở lên bằng cách dành ít nhất 2 giờ mỗi ngày để ôn bài, làm bài tập và củng cố kiến thức đại cương (đặc biệt là Toán và Vật lý).</span>
+                  </li>
+                  <li>
+                    <span>2. Trong 2 tháng tới, học thuộc ít nhất 200 từ vựng tiếng Trung cơ bản, nắm vững cách phát âm Pinyin và có thể giao tiếp những câu đơn giản bằng cách học 30 phút mỗi ngày.</span>
+                  </li>
+                  <li>
+                    <span>3. Trong 2 tháng tới, duy trì tập thể dục ít nhất 30 phút/ngày, 5 ngày/tuần, ngủ từ 7–9 giờ mỗi đêm và ăn đủ bữa để nâng cao thể lực, duy trì tinh thần tỉnh táo khi học tập.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Trung hạn -->
+            <div class="reveal-up" style="transition-delay: 0.08s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">2. Trung hạn</span>
+                </div>
+                <ul class="code-list">
+                  <li>
+                    <span>1. Trong 14 tháng, đạt chứng chỉ HSK 3 bằng cách học tiếng Trung ít nhất 45–60 phút mỗi ngày, hoàn thành giáo trình HSK 3 và làm tối thiểu 2 đề thi thử mỗi tháng.</span>
+                  </li>
+                  <li>
+                    <span>2. Trong 15 tháng, nắm vững kiến thức cơ bản về mạch điện, linh kiện điện tử và lập trình (dành ít nhất 5 giờ mỗi tuần) để học lý thuyết, làm bài tập và thực hành các mạch điện đơn giản.</span>
+                  </li>
+                  <li>
+                    <span>3. Trong 16 tháng, sử dụng thành thạo các công cụ tin học văn phòng và làm được bài thuyết trình chuyên nghiệp.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Dài hạn -->
+            <div class="reveal-up" style="transition-delay: 0.16s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">3. Dài hạn</span>
+                </div>
+                <ul class="code-list">
+                  <li>
+                    <span>1. Trong 4 năm, hoàn thành CV tiếng Trung, luyện 5 buổi phỏng vấn và ứng tuyển ít nhất 10 vị trí Tự động hóa có sử dụng tiếng Trung.</span>
+                  </li>
+                  <li>
+                    <span>2. Trong 5 năm, đạt mức thu nhập ổn định 20–25 triệu đồng/tháng trong ngành Tự động hóa bằng cách nâng cao chuyên môn và tích lũy kinh nghiệm.</span>
+                  </li>
+                  <li>
+                    <span>3. Trong 15 năm, tiết kiệm 11,1 triệu đồng/tháng để xây nhà trị giá 2 tỷ đồng ở Bắc Ninh.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SẢN PHẨM 4: KẾ HOẠCH HÌNH THÀNH THÓI QUEN TỐT VÀ THAY ĐỔI THÓI QUEN XẤU -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 4. Kế hoạch hình thành thói quen tốt và thay đổi thói quen xấu</span>
+          </div>
+
+          <div class="grid-2col">
+            <!-- Bảng Thói quen tốt -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Thói quen tốt</span>
+                </div>
+                <div class="portfolio-table-wrap">
+                  <table class="portfolio-table">
+                    <thead>
+                      <tr>
+                        <th>Thói quen tốt</th>
+                        <th>Kết quả mong muốn</th>
+                        <th>Hành động cụ thể</th>
+                        <th>Thời hạn</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Ôn lại bài trong ngày</strong></td>
+                        <td>Tổng hợp kiến thức vừa học trước khi học bài mới</td>
+                        <td>Sau mỗi ngày đọc lại vở ghi, nhớ lại bài giảng của giảng viên</td>
+                        <td>Trong 3 tuần</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Rửa bát ngay sau khi ăn</strong></td>
+                        <td>Luôn không có bát đũa bẩn trong nhà</td>
+                        <td>Bắt đầu từ rửa 1 đôi đũa, làm mỗi ngày sau khi ăn uống</td>
+                        <td>Đã làm được trong 1 tuần</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Soạn sách trước khi đi ngủ</strong></td>
+                        <td>Buổi sáng không còn vội vàng tìm sách vở</td>
+                        <td>Buổi tối trước khi đi ngủ, soạn sách vở, bút</td>
+                        <td>Trong 4 tuần</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bảng Thói quen xấu -->
+            <div class="reveal-up" style="transition-delay: 0.1s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Thói quen xấu</span>
+                </div>
+                <div class="portfolio-table-wrap">
+                  <table class="portfolio-table">
+                    <thead>
+                      <tr>
+                        <th>Thói quen xấu</th>
+                        <th>Kết quả mong muốn</th>
+                        <th>Hành động cụ thể</th>
+                        <th>Thời hạn</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Trì hoãn bài tập dài</strong></td>
+                        <td>Không quá hạn deadline vì nghĩ “mai làm vẫn kịp chán”</td>
+                        <td>Chia nhỏ việc, làm từ cái đơn giản nhất đến cái khó hơn</td>
+                        <td>Trong cả học kỳ 1</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lạm dụng điện thoại</strong></td>
+                        <td>Tăng độ tập trung vào công việc khác</td>
+                        <td>Sử dụng đồng hồ đeo tay để xem giờ, tự nhắc nhở bản thân</td>
+                        <td>Trong 2 tuần</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Nói tục</strong></td>
+                        <td>Không để nói tục trong vô thức</td>
+                        <td>Chủ động loại bỏ các từ ngữ nhạy cảm khỏi văn nói hàng ngày</td>
+                        <td>Trong cả năm học</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PHẦN 4: TÔI BIẾT CÁCH HỌC ĐẠI HỌC VÀ THÍCH ỨNG (TRANG 9, 10, 11)
+         ==================================================================== -->
+    <section id="part-4" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-dnu">PHẦN 4. TÔI BIẾT CÁCH HỌC ĐẠI HỌC VÀ THÍCH ỨNG</span>
+          </h2>
+        </div>
+
+        <!-- SẢN PHẨM 6: PHIẾU PHÂN TÍCH ĐỀ CƯƠNG MỘT HỌC PHẦN (VẬT LÍ 1) -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 6. Phiếu phân tích đề cương một học phần (Vật lí 1)</span>
+          </div>
+
+          <div class="grid-2col">
+            <!-- Thông tin học phần & Trọng số đánh giá -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Thông tin học phần</span>
+                </div>
+                <div class="id-info-list" style="margin-bottom: 1.5rem;">
+                  <div class="id-info-row">
+                    <span class="id-info-label">Tên học phần</span>
+                    <span class="id-info-value">Vật lí 1</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Số tín chỉ</span>
+                    <span class="id-info-value">3</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Mục tiêu trọng tâm</span>
+                    <span class="id-info-value">Nắm vững bản chất các định luật và vận dụng công thức để giải bài tập phần Cơ học và Nhiệt học.</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Quỹ thời gian tự học</span>
+                    <span class="id-info-value">45 – 60 phút/ngày (khoảng 5 giờ/tuần) vào khung giờ cố định buổi chiều.</span>
+                  </div>
+                </div>
+
+                <div class="id-card-header" style="margin-top: 0.5rem;">
+                  <span class="id-card-title">Các bài đánh giá và trọng số</span>
+                </div>
+                <div class="progress-group">
+                  <div class="progress-item">
+                    <div class="progress-top">
+                      <span class="progress-name">Chuyên cần và thảo luận trên lớp</span>
+                      <span class="progress-meta">10%</span>
+                    </div>
+                    <div class="progress-track">
+                      <div class="progress-fill" data-width="10%"></div>
+                    </div>
+                  </div>
+                  <div class="progress-item">
+                    <div class="progress-top">
+                      <span class="progress-name">2 bài kiểm tra giữa kỳ</span>
+                      <span class="progress-meta">40%</span>
+                    </div>
+                    <div class="progress-track">
+                      <div class="progress-fill" data-width="40%"></div>
+                    </div>
+                  </div>
+                  <div class="progress-item">
+                    <div class="progress-top">
+                      <span class="progress-name">Thi kết thúc học phần</span>
+                      <span class="progress-meta">50%</span>
+                    </div>
+                    <div class="progress-track">
+                      <div class="progress-fill fill-orange" data-width="50%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mốc nộp bài, Nguy cơ mất điểm & Chiến lược -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div class="reveal-up" style="transition-delay: 0.06s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Mốc nộp bài / thi quan trọng</span>
+                  </div>
+                  <div class="id-info-list">
+                    <div class="id-info-row">
+                      <span class="id-info-label">Bài tập về nhà</span>
+                      <span class="id-info-value">Hoàn thành trước mỗi buổi học mới</span>
+                    </div>
+                    <div class="id-info-row">
+                      <span class="id-info-label">Kiểm tra giữa kỳ 1</span>
+                      <span class="id-info-value">Tuần 4</span>
+                    </div>
+                    <div class="id-info-row">
+                      <span class="id-info-label">Kiểm tra giữa kỳ 2</span>
+                      <span class="id-info-value">Tuần 8</span>
+                    </div>
+                    <div class="id-info-row">
+                      <span class="id-info-label">Thi cuối kỳ</span>
+                      <span class="id-info-value">Tuần 12</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reveal-up" style="transition-delay: 0.12s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Nguy cơ dễ mất điểm</span>
+                  </div>
+                  <ul class="code-list">
+                    <li><span>Nhầm lẫn công thức, quên đổi về đơn vị chuẩn SI.</span></li>
+                    <li><span>Xác định sai chiều vectơ hoặc thiếu bước biến đổi.</span></li>
+                    <li><span>Lười làm bài tập dẫn đến phản xạ tính toán chậm.</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="reveal-up" style="transition-delay: 0.18s;">
+                <div class="spotlight-card tilt-card student-id-card">
+                  <div class="id-card-header">
+                    <span class="id-card-title">Chiến lược học tôi sẽ áp dụng</span>
+                  </div>
+                  <ul class="code-list">
+                    <li><span>Đi học đầy đủ, ghi chép ngắn gọn các ý chính và bài mẫu.</span></li>
+                    <li><span>Lập sổ tay tóm tắt công thức và đơn vị sau mỗi chương.</span></li>
+                    <li><span>Học xong lý thuyết bài nào giải ngay bài tập chương đó.</span></li>
+                    <li><span>Ôn đề cương trước các mốc kiểm tra ít nhất 1 tuần.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SẢN PHẨM 7: BỘ CÔNG CỤ HỌC TẬP CÁ NHÂN -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 7. Bộ công cụ học tập cá nhân</span>
+          </div>
+
+          <div class="grid-2col">
+            <!-- I. Phong cách học tập của tôi -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">I. Phong cách học tập của tôi</span>
+                </div>
+                <ul class="code-list">
+                  <li>
+                    <span><strong>Thị giác và Đọc – Viết (Visual &amp; Read/Write):</strong> Ghi nhớ tốt nhất khi thông tin được hệ thống hóa bằng bảng biểu, sơ đồ phân cấp và tự tay tóm tắt lại theo từ khóa cốt lõi.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- II. Phương pháp / công cụ tôi lựa chọn -->
+            <div class="reveal-up" style="transition-delay: 0.06s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">II. Phương pháp / công cụ tôi lựa chọn</span>
+                </div>
+                <ul class="code-list">
+                  <li><span>Ghi chép Cornell (Cornell Notes).</span></li>
+                  <li><span>Thẻ ghi nhớ (Flashcard) kết hợp Chủ động gợi nhớ (Active Recall) &amp; Lặp lại ngắt quãng (Spaced Repetition).</span></li>
+                  <li><span>Tìm kiếm và đánh giá thông tin học thuật (Google Scholar &amp; tiêu chí CRAAP).</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- III. Cách tôi áp dụng -->
+            <div class="reveal-up" style="transition-delay: 0.12s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">III. Cách tôi áp dụng</span>
+                </div>
+                <ul class="code-list">
+                  <li><span><strong>Ghi chép:</strong> Chia sổ tay theo bố cục 3 phần của Cornell để chắt lọc ý chính và đặt câu hỏi phản biện ngay trong buổi học.</span></li>
+                  <li><span><strong>Ôn tập:</strong> Chuyển các khái niệm quan trọng lên ứng dụng Flashcard (Quizlet/Anki), tự kiểm tra trí nhớ (Active Recall) theo lịch trình ngắt quãng trước kỳ thi.</span></li>
+                  <li><span><strong>Làm tiểu luận:</strong> Tra cứu tài liệu PDF trên Google Scholar và lọc nguồn tin chính thống.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- IV. Kết quả và cảm nhận -->
+            <div class="reveal-up" style="transition-delay: 0.18s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">IV. Kết quả và cảm nhận</span>
+                </div>
+                <ul class="code-list">
+                  <li><span><strong>Kết quả:</strong> Nắm chắc kiến thức trọng tâm ngay tại lớp, khắc phục triệt để tình trạng học vẹt hay học dồn sát ngày thi.</span></li>
+                  <li><span><strong>Cảm nhận:</strong> Tự tin hơn trong việc tự học, quản lý thời gian hiệu quả và làm chủ được khối lượng môn học ở đại học.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SẢN PHẨM 8: PHÂN TÍCH KHẢ NĂNG THÍCH ỨNG QUA “BỮA CƠM SINH VIÊN 30K” -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 8. Phân tích khả năng thích ứng qua “Bữa cơm sinh viên 30K”</span>
+          </div>
+
+          <div class="meal-photos-grid">
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card landscape-photo-frame">
+                <img src="ảnh bữa ăn.jpg" alt="Mâm cơm sinh viên 30K" />
+              </div>
+            </div>
+            <div class="reveal-up" style="transition-delay: 0.08s;">
+              <div class="spotlight-card tilt-card landscape-photo-frame">
+                <img src="ảnh nhóm.jpg" alt="Tập thể nhóm thực hiện bữa cơm sinh viên 30K" />
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2col">
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Vai trò và nhiệm vụ của tôi trong nhóm</span>
+                </div>
+                <div class="id-info-list">
+                  <div class="id-info-row">
+                    <span class="id-info-label">Vai trò</span>
+                    <span class="id-info-value">Thành viên nhóm</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Nhiệm vụ</span>
+                    <span class="id-info-value">Tham gia chuẩn bị nguyên liệu, lên ý tưởng, chế biến đồ ăn, thuyết trình bài làm của cả nhóm trước lớp.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal-up" style="transition-delay: 0.06s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Khó khăn / vấn đề lớn nhất nhóm gặp phải</span>
+                </div>
+                <p style="color: var(--text-primary); font-size: 0.95rem;">
+                  Mua hoa quả bị hỏng nên đã không có món tráng miệng. Nhóm làm gấp nên không có thời gian edit video thành vlog.
+                </p>
+              </div>
+            </div>
+
+            <div class="reveal-up" style="transition-delay: 0.12s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Nhóm đã xử lý / thích ứng như thế nào?</span>
+                </div>
+                <p style="color: var(--text-primary); font-size: 0.95rem;">
+                  Thích ứng bằng cách bỏ qua món tráng miệng, tập trung vào những món còn lại. Gửi video timelapse minh chứng tham gia của cả nhóm.
+                </p>
+              </div>
+            </div>
+
+            <div class="reveal-up" style="transition-delay: 0.18s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Bài học rút ra</span>
+                </div>
+                <p style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600;">
+                  Sẵn sàng buông bỏ những thứ nhỏ nhặt để tập trung vào những điểm mạnh của bản thân, học cách cân bằng thay vì làm tốt tất cả.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PHẦN 5: TÔI BIẾT SUY NGHĨ CÓ CĂN CỨ VÀ SỬ DỤNG AI CÓ TRÁCH NHIỆM (TRANG 12)
+         ==================================================================== -->
+    <section id="part-5" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-blue">PHẦN 5. TÔI BIẾT SUY NGHĨ CÓ CĂN CỨ VÀ SỬ DỤNG AI CÓ TRÁCH NHIỆM</span>
+          </h2>
+        </div>
+
+        <!-- SẢN PHẨM 9: NHẬT KÝ SỬ DỤNG AI -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 9. Nhật ký sử dụng AI</span>
+          </div>
+
+          <div class="grid-2col">
+            <!-- Mục 1 & 2 -->
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">1. Mục đích sử dụng AI</span>
+                </div>
+                <p style="color: var(--text-primary); font-size: 0.94rem; margin-bottom: 1.25rem;">
+                  Cá nhân Hưng sử dụng AI để kiểm tra bài làm, tóm tắt tài liệu, tra cứu tài liệu nhanh chóng, soạn thảo đề cương ôn tập, tạo và chỉnh sửa hình ảnh, video ngắn. Ngoài ra Hưng có sử dụng AI để nói chuyện, làm việc thay mình, làm các trò chơi, trang web, code, ... chỉ là tần suất sử dụng ít hơn. Hôm nay chúng ta nói về sử dụng AI để kiểm tra bài làm.
+                </p>
+
+                <div class="id-card-header">
+                  <span class="id-card-title">2. Câu lệnh (Prompt) đã sử dụng</span>
+                </div>
+                <div class="prompt-box">
+                  (đính kèm file PDF) Đây là bản DNU learning portflolio Demo của tôi, hãy kiểm tra các lỗi tôi có thể đã mắc phải.
+                </div>
+              </div>
+            </div>
+
+            <!-- Mục 3: Kết quả AI cung cấp -->
+            <div class="reveal-up" style="transition-delay: 0.08s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">3. Kết quả AI cung cấp</span>
+                </div>
+                <ul class="code-list">
+                  <li>
+                    <span><strong>Trang 1 - Trang bìa:</strong> Không đồng nhất cách viết y và i.</span>
+                  </li>
+                  <li>
+                    <span><strong>Trang 2 - Giới thiệu bản thân:</strong> Lỗi chính tả l/n. Đang viết sai từ <em>trở lên</em>. Bạn cần sửa lại thành <em>trở nên có ý nghĩa</em>.</span>
+                  </li>
+                  <li>
+                    <span><strong>Trang 3 - Tôi hiểu mình (Mô hình SWOT):</strong> Nhầm số 0 và chữ O trong mã SWOT. Lỗi viết hoa không đồng nhất: <em>Chiến Lược</em>.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mục 4 & 5 -->
+          <div class="grid-2col" style="margin-top: 1.5rem;">
+            <div class="reveal-up" style="transition-delay: 0.12s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">4. Kiểm chứng &amp; điều chỉnh</span>
+                </div>
+                <ul class="code-list">
+                  <li>
+                    <span>Kiểm tra tất cả các lỗi xem AI nói có đúng hay không.</span>
+                  </li>
+                  <li>
+                    <span>Không có lỗi nhầm số 0 và O, AI có thể đã nhầm lẫn do font chữ → <strong>không sửa</strong>.</span>
+                  </li>
+                  <li>
+                    <span>Tra cứu chính tả từ “trở lên” và “trở nên”, nhận thấy từ “trở lên” chỉ sự tăng lên về số lượng,.. còn “trở nên” diễn tả sự chuyển biến về trạng thái,.. → <strong>sửa</strong>.</span>
+                  </li>
+                  <li>
+                    <span>Kiểm tra bài làm và thấy có lỗi chính tả như AI phát hiện → <strong>sửa</strong>.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="reveal-up" style="transition-delay: 0.18s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">5. Sản phẩm sau khi hoàn thiện</span>
+                </div>
+                <blockquote class="pride-blockquote" style="margin-top: 1rem;">
+                  “Sản phẩm sau khi hoàn thiện chính là 3 trang đầu của DNU LEARNING PORTFOLIO.”
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PHẦN 6: TÔI BIẾT GIAO TIẾP VÀ TIẾP NHẬN PHẢN HỒI (TRANG 13)
+         ==================================================================== -->
+    <section id="part-6" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-dnu">PHẦN 6. TÔI BIẾT GIAO TIẾP VÀ TIẾP NHẬN PHẢN HỒI</span>
+          </h2>
+        </div>
+
+        <!-- SẢN PHẨM 10: SẢN PHẨM GIAO TIẾP -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 10. Sản phẩm giao tiếp</span>
+          </div>
+
+          <div class="comm-layout">
+            <div class="reveal-up">
+              <div class="spotlight-card tilt-card landscape-photo-frame">
+                <img src="ảnh giao tiếp.png" alt="Sản phẩm giao tiếp với sinh viên trong trường" />
+              </div>
+            </div>
+
+            <div class="reveal-up" style="transition-delay: 0.08s;">
+              <div class="spotlight-card tilt-card student-id-card">
+                <div class="id-card-header">
+                  <span class="id-card-title">Sản phẩm giao tiếp</span>
+                </div>
+                <div class="id-info-list">
+                  <div class="id-info-row">
+                    <span class="id-info-label">Nội dung</span>
+                    <span class="id-info-value">Một bạn sinh viên trong trường</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Tình huống</span>
+                    <span class="id-info-value">Trao đổi về học phần kỹ năng mềm cơ bản, hỏi sự khác nhau giữa học đại học và THPT.</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Tôi đã giao tiếp như thế nào?</span>
+                    <span class="id-info-value">Trao đổi về thông tin cá nhân, học phần kỹ năng mềm cơ bản, điều khó khăn và thuận lợi khi mới bắt đầu vào Đại Học.</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Kết quả</span>
+                    <span class="id-info-value">Tạo được sự kết nối đơn giản giữa 2 bên.</span>
+                  </div>
+                  <div class="id-info-row">
+                    <span class="id-info-label">Điều tôi rút ra</span>
+                    <span class="id-info-value">Giao tiếp không đáng sợ nhưng cần sự tự tin để có thể chủ động giao tiếp với những người lạ.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PHẦN 7: TÔI NHÌN LẠI VÀ TIẾP TỤC CẢI THIỆN (TRANG 14)
+         ==================================================================== -->
+    <section id="part-7" class="section">
+      <div class="container">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            <span class="text-gradient-blue">PHẦN 7. TÔI NHÌN LẠI VÀ TIẾP TỤC CẢI THIỆN</span>
+          </h2>
+        </div>
+
+        <!-- SẢN PHẨM 11: PHẢN TƯ CUỐI HỌC PHẦN -->
+        <div class="subsection-block">
+          <div class="subsection-title reveal-up">
+            <span>Sản phẩm 11. Phản tư cuối học phần</span>
+          </div>
+
+          <div class="grid-3col">
+          <!-- Những điều em đã thay đổi sau học phần -->
+          <div class="reveal-up">
+            <div class="spotlight-card tilt-card student-id-card">
+              <div class="id-card-header">
+                <span class="id-card-title">Những điều em đã thay đổi sau học phần</span>
+              </div>
+              <ul class="code-list">
+                <li><span>Loại bỏ thói quen xấu lạm dụng điện thoại.</span></li>
+                <li><span>Ôn lại bài trong ngày.</span></li>
+                <li><span>Rửa bát ngay sau khi ăn.</span></li>
+                <li><span>Soạn sách trước khi đi ngủ.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Những điều em sẽ tiếp tục duy trì, phát triển sau học phần -->
+          <div class="reveal-up" style="transition-delay: 0.08s;">
+            <div class="spotlight-card tilt-card student-id-card">
+              <div class="id-card-header">
+                <span class="id-card-title">Những điều em sẽ tiếp tục duy trì, phát triển sau học phần</span>
+              </div>
+              <ul class="code-list">
+                <li><span>Loại bỏ thói quen xấu nói tục.</span></li>
+                <li><span>Loại bỏ thói quen xấu trì hoãn bài tập dài.</span></li>
+                <li><span>Duy trì văn hóa chào hỏi, xếp hàng của sinh viên Đại Nam.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Những bài học rút ra -->
+          <div class="reveal-up" style="transition-delay: 0.16s;">
+            <div class="spotlight-card tilt-card student-id-card">
+              <div class="id-card-header">
+                <span class="id-card-title">Những bài học rút ra</span>
+              </div>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                Những bài học tiêu biểu rút ra sau học phần kỹ năng mềm cơ bản:
+              </p>
+              <ul class="code-list">
+                <li><span>Kỹ năng làm việc nhóm</span></li>
+                <li><span>Nhận biết bản thân</span></li>
+                <li><span>Kỹ năng quản lý thời gian</span></li>
+                <li><span>Kỹ năng đặt mục tiêu</span></li>
+                <li><span>Kỹ năng thích ứng</span></li>
+                <li><span>Kỹ năng giao tiếp</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lời cảm ơn cuối trang -->
+        <div class="reveal-up" style="transition-delay: 0.22s;">
+          <div class="spotlight-card tilt-card student-id-card thank-you-banner">
+            <h3 class="thank-you-title">
+              <span class="text-gradient-blue">Thank you</span>
+              <span class="text-gradient-dnu">for your attention</span>
+            </h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.75rem;">
+              Nguyễn Tuấn Hưng • MSV: 2071080075 • Lớp Tự động hóa 20-01 • Trường Đại học Đại Nam
+            </p>
+            <a href="#hero" class="btn-primary" data-smooth-scroll>Quay lại đầu trang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-credit">
+      <div class="container">
+        DNU LEARNING PORTFOLIO — Nguyễn Tuấn Hưng (2071080075) • Khoa Công nghệ bán dẫn • Trường Đại học Đại Nam
+      </div>
+    </footer>
+  </main>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>

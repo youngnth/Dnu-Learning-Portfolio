@@ -1,0 +1,525 @@
+[
+  {
+    "id": "perfa-01",
+    "slug": "sofa-vang-an-nhien-3-cho",
+    "name": "Sofa Văng An Nhiên 3 Chỗ",
+    "price": 18900000,
+    "originalPrice": 21500000,
+    "type": "Sofa văng",
+    "material": "Vải Bouclé chống cào PerfaWeave™",
+    "colors": [
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Xám khói Đá cuội", "hex": "#9ca09c" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Thiết kế bo tròn toàn bộ góc cạnh, bọc vải dệt PerfaWeave™ chống móng mèo cào xước và tháo rời vỏ giặt máy dễ dàng.",
+    "description": "Sofa Văng An Nhiên 3 Chỗ là mẫu sofa bán chạy nhất của Perfa tại các căn hộ chung cư Hà Nội từ 70m² – 110m². Toàn bộ phần tay vịn và khung đế gỗ sồi Nga được bo tròn bán kính R35 cùng lớp mút bọc dày 4cm, giúp ba mẹ hoàn toàn yên tâm khi bé tập đi hoặc chạy nhảy quanh phòng khách. Bề mặt vải dệt xoắn PerfaWeave™ không tạo khe hở để móng mèo hay cún móc sợi, đồng thời phủ lớp trượt nước sinh học ngăn sữa và nước trái cây thấm sâu.",
+    "dimensions": "Dài 220cm x Sâu 92cm x Cao 82cm (Chiều cao mặt ngồi 42cm)",
+    "frame": "Khung gỗ Sồi Nga tẩm sấy chống mối mọt, bảo hành 5 năm tại Hà Nội",
+    "cushion": "Đệm mút K43 đàn hồi cao kết hợp lông vũ nhân tạo kháng khuẩn OEKO-TEX®",
+    "highlights": [
+      "Vải chống cào móng thú cưng đạt 55.000 vòng ma sát Martindale",
+      "Toàn bộ vỏ đệm ngồi và tựa lưng có khóa kéo YKK ẩn để tháo giặt máy",
+      "Góc cạnh bo tròn 100% chống va đập cho trẻ nhỏ",
+      "Chân gỗ cao 14cm giúp robot hút bụi di chuyển dễ dàng bên dưới"
+    ],
+    "featured": true,
+    "badge": "Bán chạy số 1 Hà Nội",
+    "rating": 4.9,
+    "reviewCount": 86,
+    "idealFor": "Căn hộ 2–3 phòng ngủ có trẻ nhỏ dưới 6 tuổi và nuôi mèo"
+  },
+  {
+    "id": "perfa-02",
+    "slug": "sofa-goc-chu-l-moc-lan",
+    "name": "Sofa Góc Chữ L Mộc Lan",
+    "price": 26500000,
+    "originalPrice": 29800000,
+    "type": "Sofa góc chữ L",
+    "material": "Vải Nhung Tuyết trượt nước AquaShield™",
+    "colors": [
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Nâu Caramel ấm", "hex": "#a46b47" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Sofa góc chữ L rộng rãi cho cả gia đình quây quần, công nghệ AquaShield™ trượt nước giúp lau sạch vết sữa đổ chỉ trong 10 giây.",
+    "description": "Được thiết kế riêng cho thói quen sinh hoạt quây quần của gia đình Việt, Sofa Góc Chữ L Mộc Lan mang lại phần đôn nối dài rộng 95cm như một chiếc giường nhỏ để bố mẹ đọc truyện cùng con mỗi tối. Lớp vải Nhung Tuyết AquaShield™ thế hệ mới có bề mặt mịn màng không bám lông thú cưng: bạn chỉ cần dùng cây lăn bụi hoặc khăn ẩm vuốt nhẹ là sạch 99% lông rụng. Đặc biệt, phần góc chữ L có thể đảo linh hoạt trái/phải phù hợp mọi mặt bằng chung cư Hà Nội.",
+    "dimensions": "Dài 275cm x Góc chữ L 165cm x Sâu 95cm x Cao 84cm",
+    "frame": "Khung gỗ Sồi tự nhiên kết hợp giàn lò xo túi độc lập êm ái",
+    "cushion": "Đệm mút đa tầng D45 chống xẹp lún trong 10 năm sử dụng",
+    "highlights": [
+      "Công nghệ lá sen AquaShield™ ngăn chất lỏng thấm vào ruột đệm trong 15 phút",
+      "Bề mặt dệt vi điểm chống bám lông chó mèo, lau sạch vết bút màu nước dễ dàng",
+      "Đảo chiều góc chữ L trái hoặc phải linh hoạt khi chuyển nhà hoặc đổi bố cục",
+      "Độ sâu lòng ghế 65cm thoải mái nằm nghỉ trưa"
+    ],
+    "featured": true,
+    "badge": "Ưa chuộng cho gia đình 4 người",
+    "rating": 4.9,
+    "reviewCount": 64,
+    "idealFor": "Phòng khách rộng từ 18m², gia đình đông thành viên và nuôi thú cưng"
+  },
+  {
+    "id": "perfa-03",
+    "slug": "sofa-vang-tinh-mo-2m",
+    "name": "Sofa Văng Tinh Mơ 2m Nhỏ Gọn",
+    "price": 14500000,
+    "originalPrice": 16200000,
+    "type": "Sofa văng",
+    "material": "Vải Linen kháng khuẩn BioLinen™",
+    "colors": [
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Cam đất Terracotta", "hex": "#b8634a" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Kích thước 2m tối ưu cho chung cư vừa và nhỏ tại Hà Nội, chất vải BioLinen™ thoáng khí chống ẩm mốc mùa nồm.",
+    "description": "Khí hậu nồm ẩm mùa xuân Hà Nội luôn là nỗi ám ảnh với các gia đình có con nhỏ dễ dị ứng đường hô hấp. Sofa Văng Tinh Mơ 2m sử dụng dòng vải lanh hữu cơ BioLinen™ xử lý ion bạc kháng khuẩn, thoát ẩm nhanh gấp 3 lần vải thông thường và không tích mùi hôi khi nhà nuôi cún hoặc mèo. Thiết kế tay vịn mảnh nhưng êm ái giúp tối đa hóa diện tích ngồi trong chiều dài tổng thể chỉ 200cm.",
+    "dimensions": "Dài 200cm x Sâu 88cm x Cao 80cm",
+    "frame": "Khung gỗ Tần Bì (Ash) nhập khẩu Bắc Mỹ đã xử lý chống cong vênh",
+    "cushion": "Đệm mút lạnh thoáng khí kết hợp bông gòn kháng khuẩn",
+    "highlights": [
+      "Kháng khuẩn tự nhiên và chống nấm mốc trong mùa nồm ẩm miền Bắc",
+      "Tháo rời toàn bộ áo sofa và vỏ đệm trong 5 phút để giặt máy tại nhà",
+      "Trọng lượng vừa phải, dễ dàng di chuyển khi vệ sinh sàn nhà",
+      "Chứng nhận không chứa Formaldehyde an toàn cho trẻ sơ sinh"
+    ],
+    "featured": true,
+    "badge": "Tối ưu chung cư 55–75m²",
+    "rating": 4.8,
+    "reviewCount": 52,
+    "idealFor": "Gia đình trẻ tại Vinhomes Smart City, Ocean Park, Times City"
+  },
+  {
+    "id": "perfa-04",
+    "slug": "sofa-da-vi-soi-ecopaws-hoang-hon",
+    "name": "Sofa Văng Hoàng Hôn Da EcoPaws™",
+    "price": 23800000,
+    "originalPrice": 26500000,
+    "type": "Sofa văng",
+    "material": "Da vi sợi chống xước EcoPaws™",
+    "colors": [
+      { "name": "Nâu Caramel ấm", "hex": "#a46b47" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Xám khói Đá cuội", "hex": "#9ca09c" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Da vi sợi EcoPaws™ dày 1.6mm chống trầy móng chó mèo, lau sạch ngay vết bút sáp màu và đồ ăn dặm của bé.",
+    "description": "Nếu bạn yêu vẻ sang trọng, ấm áp của sofa da nhưng từng lo ngại móng cún cưng làm rách bề mặt hoặc bé dùng bút sáp vẽ lên ghế, Sofa Văng Hoàng Hôn chính là câu trả lời từ Perfa. Chất liệu da vi sợi EcoPaws™ có cấu trúc 3D mô phỏng da thật nhưng độ bền kéo và chống trầy xước cao gấp 4 lần. Mọi vết bẩn từ cháo, sữa chua, socola hay bút màu sáp đều được lau sạch nhẹ nhàng bằng khăn ẩm mà không để lại vệt ố.",
+    "dimensions": "Dài 230cm x Sâu 94cm x Cao 82cm",
+    "frame": "Khung gỗ Sồi Nga kết hợp chân thép sơn tĩnh điện bọc đồng",
+    "cushion": "Đệm mút đàn hồi K43 phủ lớp memory foam êm dịu",
+    "highlights": [
+      "Chống thấm nước 100%, không lo bé tè dầm hay đổ nước ngọt",
+      "Bề mặt da vi sợi thoáng khí: mát mùa hè, ấm mùa đông Hà Nội",
+      "Chống trầy xước khi chó mèo chạy nhảy trên mặt ghế",
+      "Đường may chỉ dù đôi siêu bền chịu lực căng lớn"
+    ],
+    "featured": true,
+    "badge": "Chống bẩn tuyệt đối",
+    "rating": 4.9,
+    "reviewCount": 71,
+    "idealFor": "Gia đình có bé đang tuổi ăn dặm, tập vẽ và nuôi cún năng động"
+  },
+  {
+    "id": "perfa-05",
+    "slug": "sofa-mo-dun-may-trang-4-khoi",
+    "name": "Sofa Mô-đun Mây Trắng 4 Khối Ghép Linh Hoạt",
+    "price": 32900000,
+    "originalPrice": 36000000,
+    "type": "Sofa mô-đun & Sofa giường",
+    "material": "Vải Bouclé chống cào PerfaWeave™",
+    "colors": [
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Xám khói Đá cuội", "hex": "#9ca09c" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Thiết kế không gầm thấp sát sàn an toàn cho bé tập bò, ghép linh hoạt thành sofa góc, sofa văng hoặc giường đệm lớn.",
+    "description": "Sofa Mô-đun Mây Trắng gồm 4 khối rời có khóa ngầm liên kết chắc chắn bên dưới: 2 khối giữa, 1 khối góc và 1 khối đôn lớn. Khi gia đình có khách hoặc cuối tuần cả nhà xem phim, bạn có thể ghép 4 khối lại thành một chiếc giường êm rộng 2m x 2m ngay giữa phòng khách. Thiết kế chiều cao mặt ngồi thấp (38cm) và không có cạnh cứng giúp các bé từ 6 tháng tuổi tập bò, tập vịn đứng cực kỳ an toàn.",
+    "dimensions": "Tổng chiều dài ghép thẳng 310cm x Sâu 102cm x Cao 76cm",
+    "frame": "Khung gỗ thông New Zealand bọc đệm mút toàn phần 360 độ",
+    "cushion": "Đệm lông vũ nhân tạo Microfiber kết hợp mút đàn hồi đa tầng",
+    "highlights": [
+      "Bọc mút mềm 360 độ toàn bộ thân ghế, không có bất kỳ góc cứng nào",
+      "Biến hình thành 5 kiểu bố trí khác nhau tùy diện tích phòng khách",
+      "Chân đế ẩn sát sàn ngăn đồ chơi của bé và bóng của mèo lọt xuống gầm",
+      "Vỏ bọc từng mô-đun tháo rời độc lập để giặt từng phần khi cần"
+    ],
+    "featured": true,
+    "badge": "An toàn cho bé tập bò",
+    "rating": 5.0,
+    "reviewCount": 43,
+    "idealFor": "Gia đình có em bé sơ sinh đến 3 tuổi, căn hộ rộng hoặc nhà phố"
+  },
+  {
+    "id": "perfa-06",
+    "slug": "sofa-don-thu-gian-la-xanh",
+    "name": "Ghế Sofa Đơn Thư Giãn Lá Xanh",
+    "price": 7900000,
+    "originalPrice": 8900000,
+    "type": "Sofa đơn & Đôn thư giãn",
+    "material": "Vải Bouclé chống cào PerfaWeave™",
+    "colors": [
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Cam đất Terracotta", "hex": "#b8634a" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Ghế bành ôm lưng công thái học dành cho mẹ cho con bú, đọc sách hoặc làm góc nằm tắm nắng yêu thích của mèo cưng.",
+    "description": "Ghế Sofa Đơn Thư Giãn Lá Xanh được nghiên cứu độ nghiêng tựa lưng 108 độ chuẩn công thái học, nâng đỡ trọn vẹn vùng thắt lưng và cổ vai gáy. Rất nhiều gia đình khách hàng của Perfa tại Hà Nội chọn chiếc ghế này đặt trong phòng ngủ để mẹ bế ru bé ngủ đêm, hoặc đặt cạnh cửa sổ ban công phòng khách. Khung gỗ sồi bo tròn thủ công kết hợp vải Bouclé xanh rêu Perfa tạo điểm nhấn tinh tế cho mọi góc nhà.",
+    "dimensions": "Rộng 82cm x Sâu 85cm x Cao 84cm",
+    "frame": "Khung gỗ Sồi Nga nguyên khối đánh mịn thủ công phủ dầu lau thực vật",
+    "cushion": "Đệm mút K43 êm sâu kèm gối tựa lưng hỗ trợ cột sống",
+    "highlights": [
+      "Phủ dầu lau gỗ gốc thực vật không mùi sơn PU, an toàn tuyệt đối cho trẻ nhỏ",
+      "Độ nghiêng tựa lưng 108° giảm mỏi lưng khi bế bé hoặc đọc sách lâu",
+      "Vải PerfaWeave™ bền bỉ trước móng vuốt khi mèo nằm cuộn tròn mỗi ngày",
+      "Nhỏ gọn, dễ phối cùng sofa văng hoặc đặt trong phòng ngủ"
+    ],
+    "featured": true,
+    "badge": "Góc thư giãn cho mẹ & bé",
+    "rating": 4.9,
+    "reviewCount": 95,
+    "idealFor": "Góc đọc sách, phòng ngủ có em bé, phối thêm với sofa văng phòng khách"
+  },
+  {
+    "id": "perfa-07",
+    "slug": "sofa-giuong-thong-minh-ban-mai",
+    "name": "Sofa Giường Thông Minh Ban Mai",
+    "price": 21500000,
+    "originalPrice": 24000000,
+    "type": "Sofa mô-đun & Sofa giường",
+    "material": "Vải Linen kháng khuẩn BioLinen™",
+    "colors": [
+      { "name": "Xám khói Đá cuội", "hex": "#9ca09c" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Mở rộng thành giường đôi 1m6x2m chỉ với 1 thao tác kéo nhẹ có trợ lực chống kẹt tay trẻ em, kèm hộc chứa đồ rộng.",
+    "description": "Với những gia đình trẻ tại Hà Nội thường xuyên có ông bà nội ngoại lên chơi thăm cháu cuối tuần, Sofa Giường Thông Minh Ban Mai là giải pháp 2 trong 1 hoàn hảo. Hệ ray trượt thép giảm chấn có cơ chế khóa an toàn chống kẹt tay trẻ nhỏ, giúp mở rộng sofa thành giường ngủ phẳng phiu chỉ trong 5 giây. Bên dưới ghế còn tích hợp ngăn chứa chăn gối và đồ chơi cho bé cực kỳ gọn gàng.",
+    "dimensions": "Sofa: 215cm x 95cm x 85cm | Mở thành giường: 215cm x 160cm",
+    "frame": "Khung gỗ Sồi kết hợp hệ khung thép sơn tĩnh điện giảm chấn",
+    "cushion": "Đệm mút D40 phẳng chuẩn nệm ngủ bảo vệ cột sống",
+    "highlights": [
+      "Bản lề giảm chấn có khóa an toàn chống kẹt tay cho trẻ nhỏ",
+      "Tích hợp hộc chứa chăn gối hoặc thùng đồ chơi dung tích 180 lít",
+      "Bề mặt khi mở thành giường phẳng liền mạch, ông bà nằm không đau lưng",
+      "Vải BioLinen™ kháng khuẩn, tháo rời vỏ giặt máy dễ dàng"
+    ],
+    "featured": false,
+    "badge": "Đa năng 2 trong 1",
+    "rating": 4.8,
+    "reviewCount": 39,
+    "idealFor": "Căn hộ cần thêm giường ngủ dự phòng cho ông bà lên chăm cháu"
+  },
+  {
+    "id": "perfa-08",
+    "slug": "sofa-goc-chu-l-vinh-xanh-co-lon",
+    "name": "Sofa Góc Chữ L Vịnh Xanh Cỡ Lớn",
+    "price": 34500000,
+    "originalPrice": 38500000,
+    "type": "Sofa góc chữ L",
+    "material": "Vải Bouclé chống cào PerfaWeave™",
+    "colors": [
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Xanh Navy trầm", "hex": "#354656" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Chiều dài 3m1 bề thế cho phòng khách lớn, tích hợp bệ bước thấp cho cún nhỏ và tay vịn bản rộng làm gối nằm êm ái.",
+    "description": "Sofa Góc Chữ L Vịnh Xanh là dòng sản phẩm cao cấp của Perfa dành cho các căn hộ diện tích lớn, Duplex, biệt thự liền kề tại Ciputra, Starlake, Vinhomes Riverside hay Ecopark. Tay vịn được thiết kế bản rộng 28cm vát nghiêng mềm mại như một chiếc gối tựa đầu tự nhiên. Toàn bộ vải bọc PerfaWeave™ dày dặn chống cào xước hoàn hảo ngay cả khi gia đình nuôi các giống chó lớn như Golden, Corgi hay Samoyed.",
+    "dimensions": "Dài 310cm x Góc chữ L 180cm x Sâu 98cm x Cao 84cm",
+    "frame": "Khung gỗ Sồi Đỏ (Red Oak) bản dày 4cm chịu tải trọng trên 600kg",
+    "cushion": "Hệ đệm 3 lớp: Lò xo túi độc lập + Mút K43 + Lông vũ nhân tạo",
+    "highlights": [
+      "Sức chứa thoải mái cho 6–8 người lớn cùng trẻ nhỏ và thú cưng",
+      "Chịu lực nhún nhảy liên tục của trẻ em mà không phát tiếng cót két",
+      "Tặng kèm 4 gối ôm cùng chất liệu chống bám lông thú cưng",
+      "Bảo hành khung gỗ 5 năm và bảo dưỡng định kỳ tận nhà tại Hà Nội"
+    ],
+    "featured": false,
+    "badge": "Dành cho phòng khách lớn",
+    "rating": 5.0,
+    "reviewCount": 31,
+    "idealFor": "Căn hộ 3–4 phòng ngủ, biệt thự Ciputra, Starlake, Ecopark"
+  },
+  {
+    "id": "perfa-09",
+    "slug": "sofa-vang-hat-de-da-ecopaws-2m4",
+    "name": "Sofa Văng Hạt Dẻ 2m4",
+    "price": 25200000,
+    "originalPrice": 27900000,
+    "type": "Sofa văng",
+    "material": "Da vi sợi chống xước EcoPaws™",
+    "colors": [
+      { "name": "Nâu Caramel ấm", "hex": "#a46b47" },
+      { "name": "Cam đất Terracotta", "hex": "#b8634a" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Phong cách Mid-Century ấm cúng với phần đệm chia múi êm ái, da EcoPaws™ kháng nước và chống bám mùi vật nuôi.",
+    "description": "Lấy cảm hứng từ sắc nâu ấm của mùa thu Hà Nội, Sofa Văng Hạt Dẻ 2m4 mang lại cảm giác sang trọng nhưng vô cùng gần gũi. Đệm ngồi được chần múi nhẹ giúp giữ phom căng phồng suốt nhiều năm và tạo độ ma sát chống trơn trượt khi trẻ nhỏ ngồi chơi. Lớp da vi sợi EcoPaws™ ngăn hoàn toàn nước bọt hay lông thú cưng bám vào sâu bên trong, chỉ cần lau bằng khăn ẩm là sạch thơm như mới.",
+    "dimensions": "Dài 240cm x Sâu 92cm x Cao 82cm",
+    "frame": "Khung gỗ Sồi tự nhiên kết hợp chân gỗ Tần Bì tiện tròn",
+    "cushion": "Đệm mút nguyên khối D45 đàn hồi chuẩn châu Âu",
+    "highlights": [
+      "Không thấm nước, không lưu mùi thú cưng ngay cả trong mùa mưa ẩm",
+      "Mặt ngồi chần múi chống trượt, an toàn cho bé ngồi chơi",
+      "Chân gỗ tiện tròn vát góc lùi vào trong tránh vấp ngón chân",
+      "Phù hợp cả phong cách nội thất Hiện đại, Bắc Âu và Indochine"
+    ],
+    "featured": false,
+    "rating": 4.8,
+    "reviewCount": 47,
+    "idealFor": "Gia đình yêu thích chất liệu da ấm áp, dễ vệ sinh hàng ngày"
+  },
+  {
+    "id": "perfa-10",
+    "slug": "sofa-vang-cong-mem-mai-suong-mai",
+    "name": "Sofa Văng Cong Nghệ Thuật Sương Mai",
+    "price": 22900000,
+    "originalPrice": 25000000,
+    "type": "Sofa văng",
+    "material": "Vải Nhung Tuyết trượt nước AquaShield™",
+    "colors": [
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Cam đất Terracotta", "hex": "#b8634a" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Đường cong hữu cơ không một góc nhọn, làm mềm không gian căn hộ và bảo vệ bé tuyệt đối khi vui đùa.",
+    "description": "Sofa Văng Cong Nghệ Thuật Sương Mai xóa bỏ hoàn toàn các đường thẳng khô cứng thường thấy ở căn hộ chung cư. Tựa lưng uốn lượn mềm mại ôm trọn cơ thể, không có bất kỳ góc vuông nào có thể gây va chạm cho các bé hiếu động. Bọc ngoài bằng vải Nhung Tuyết AquaShield™ trượt nước, chiếc sofa màu kem sữa hay xanh rêu vẫn luôn giữ được vẻ tinh khôi dù nhà có trẻ nhỏ và thú cưng.",
+    "dimensions": "Dài 225cm x Sâu 96cm x Cao 79cm",
+    "frame": "Khung gỗ uốn cong đa lớp chịu lực cao kết hợp gỗ Sồi",
+    "cushion": "Đệm mút đàn hồi cao K43 nguyên tấm không khe hở",
+    "highlights": [
+      "Thiết kế Organic 100% đường cong, loại bỏ hoàn toàn nguy cơ va cạnh cho bé",
+      "Mặt đệm liền tấm không có khe hở làm rơi đồ chơi nhỏ hay thức ăn",
+      "Vải AquaShield™ chống thấm nước, cà phê, sữa và dễ dàng hút bụi lông mèo",
+      "Tạo điểm nhấn thẩm mỹ cao cấp cho phòng khách hiện đại"
+    ],
+    "featured": false,
+    "badge": "Thiết kế Organic không góc cạnh",
+    "rating": 4.9,
+    "reviewCount": 38,
+    "idealFor": "Gia đình yêu thích phong cách Wabi-Sabi, Japandi, Bắc Âu đương đại"
+  },
+  {
+    "id": "perfa-11",
+    "slug": "sofa-goc-chu-l-binh-yen-nho-gon",
+    "name": "Sofa Góc Chữ L Bình Yên 2m4 Nhỏ Gọn",
+    "price": 22500000,
+    "originalPrice": 24800000,
+    "type": "Sofa góc chữ L",
+    "material": "Vải Linen kháng khuẩn BioLinen™",
+    "colors": [
+      { "name": "Xám khói Đá cuội", "hex": "#9ca09c" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Sofa góc chữ L vừa vặn cho chung cư 65–85m², tích hợp túi hông đựng sách truyện cho bé và điều khiển tivi.",
+    "description": "Nhiều gia đình ở chung cư diện tích vừa muốn sở hữu sofa góc chữ L để duỗi chân xem tivi nhưng sợ chiếm chỗ lối đi. Sofa Góc Chữ L Bình Yên với chiều dài 240cm và phần đôn rời thông minh giúp bạn vừa có góc nằm thư giãn, vừa có thể tách rời đôn thành ghế phụ khi nhà có khách. Hai bên tay vịn tích hợp túi vải dày dặn để cất truyện tranh của bé và điều khiển từ xa luôn gọn gàng.",
+    "dimensions": "Dài 240cm x Góc L 150cm x Sâu 88cm x Cao 82cm",
+    "frame": "Khung gỗ Sồi Nga đã qua tẩm sấy tiêu chuẩn xuất khẩu",
+    "cushion": "Đệm mút K43 độ cứng vừa phải nâng đỡ cột sống",
+    "highlights": [
+      "Đôn góc chữ L tháo rời linh hoạt thành ghế đôn độc lập",
+      "Có túi vải hai bên tay vịn để bé tự cất sách truyện sau khi đọc",
+      "Toàn bộ vỏ bọc BioLinen™ tháo rời giặt máy, nhanh khô",
+      "Kích thước chuẩn thang máy mọi tòa chung cư tại Hà Nội"
+    ],
+    "featured": false,
+    "rating": 4.8,
+    "reviewCount": 58,
+    "idealFor": "Chung cư 2 phòng ngủ cần tối ưu diện tích và sự ngăn nắp"
+  },
+  {
+    "id": "perfa-12",
+    "slug": "ghe-don-bap-benh-ru-ngu-me-va-be",
+    "name": "Ghế Bành Bập Bênh Ru Ngủ Mẹ & Bé",
+    "price": 8600000,
+    "originalPrice": 9800000,
+    "type": "Sofa đơn & Đôn thư giãn",
+    "material": "Vải Nhung Tuyết trượt nước AquaShield™",
+    "colors": [
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Cam đất Terracotta", "hex": "#b8634a" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Biên độ đung đưa an toàn 15 độ chống lật, kèm đôn gác chân êm ái giúp mẹ bế bé ngủ ngon và thư giãn cột sống.",
+    "description": "Được thiết kế cùng sự tư vấn của các chuyên gia chăm sóc sau sinh, Ghế Bành Bập Bênh Ru Ngủ Mẹ & Bé có chân cong gỗ sồi giới hạn góc nghiêng an toàn 15 độ kèm chốt chặn chống trượt. Khi mẹ bế bé cho bú hoặc ru ngủ, nhịp đung đưa nhẹ nhàng giúp bé nhanh vào giấc mà mẹ không bị mỏi tay nhờ phần kê tay cao vừa tầm. Vải AquaShield™ trượt nước giúp lau sạch ngay khi bé trớ sữa.",
+    "dimensions": "Ghế: Rộng 78cm x Sâu 90cm x Cao 96cm | Đôn gác chân: 50cm x 40cm x 38cm",
+    "frame": "Chân bập bênh gỗ Sồi Nga nguyên khối có dải nỉ chống ồn dưới đáy",
+    "cushion": "Đệm bông Microfiber siêu êm kết hợp gối tựa cổ tháo rời",
+    "highlights": [
+      "Tặng kèm đôn gác chân đồng bộ giúp giảm phù nề chân cho mẹ bầu & sau sinh",
+      "Vải chống thấm sữa trớ, lau sạch bằng khăn ấm không để lại mùi",
+      "Chân bập bênh dán nỉ tiêu âm, không gây tiếng động và không xước sàn gỗ",
+      "Góc lắc giới hạn an toàn, không lo kẹt chân thú cưng"
+    ],
+    "featured": false,
+    "badge": "Quà tặng tuyệt vời cho mẹ bầu",
+    "rating": 5.0,
+    "reviewCount": 62,
+    "idealFor": "Phòng ngủ em bé, góc đọc sách thư giãn tại nhà"
+  },
+  {
+    "id": "perfa-13",
+    "slug": "don-sofa-kiem-nha-meo-cat-haven",
+    "name": "Đôn Sofa Tích Hợp Nhà Mèo Cat Haven",
+    "price": 4500000,
+    "originalPrice": 5200000,
+    "type": "Sofa đơn & Đôn thư giãn",
+    "material": "Vải Bouclé chống cào PerfaWeave™",
+    "colors": [
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" },
+      { "name": "Nâu Caramel ấm", "hex": "#a46b47" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1573866926487-a1865558a9cf?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Bên trên là đôn ngồi/gác chân êm ái cho gia chủ, bên dưới là hốc trú ẩn ấm áp có lót đệm giặt được cho mèo và cún nhỏ.",
+    "description": "Thấu hiểu tâm lý loài mèo luôn thích những chiếc hộp kín đáo ngay gần chủ nhân, đội ngũ thiết kế Perfa đã tạo ra Đôn Sofa Cat Haven. Phía trên là mặt đệm ngồi chịu lực 120kg cho người lớn hoặc trẻ nhỏ ngồi chơi, phía dưới là khoang tròn đường kính 38cm lót đệm lông cừu nhân tạo có thể tháo rời giặt máy. Bề mặt bên ngoài bọc vải Bouclé chống cào PerfaWeave™ giúp mèo thoải mái mài móng mà không bung sợi.",
+    "dimensions": "Đường kính 62cm x Cao 44cm (Khoang thú cưng rộng 45cm)",
+    "frame": "Khung gỗ uốn tròn chịu lực bọc mút toàn phần",
+    "cushion": "Đệm ngồi K43 + Đệm lót ổ mèo tháo rời giặt máy",
+    "highlights": [
+      "Thiết kế 2 trong 1: Đôn sofa phòng khách kiêm ổ ngủ sang trọng cho thú cưng",
+      "Vải chống cào chuyên dụng chịu được móng mèo cào mỗi ngày",
+      "Đệm lót bên trong tháo rời vệ sinh chỉ trong 10 giây",
+      "Đồng bộ màu sắc hoàn hảo với tất cả các mẫu sofa Perfa"
+    ],
+    "featured": false,
+    "badge": "Thiết kế độc quyền cho Pet",
+    "rating": 4.9,
+    "reviewCount": 74,
+    "idealFor": "Gia đình nuôi mèo hoặc cún nhỏ (Poodle, Phốc sóc, Pug, Corgi)"
+  },
+  {
+    "id": "perfa-14",
+    "slug": "sofa-mo-dun-gia-dinh-to-am-3-cho",
+    "name": "Sofa Mô-đun Tổ Ấm Kèm Đôn Bước Thú Cưng",
+    "price": 28900000,
+    "originalPrice": 31900000,
+    "type": "Sofa mô-đun & Sofa giường",
+    "material": "Da vi sợi chống xước EcoPaws™",
+    "colors": [
+      { "name": "Nâu Caramel ấm", "hex": "#a46b47" },
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Gồm 3 mô-đun ghế lớn và 1 đôn bậc thấp giúp bé nhỏ hoặc cún chân ngắn leo lên sofa an toàn, không hại khớp.",
+    "description": "Các bé mới biết đi từ 1–2 tuổi và các giống cún chân ngắn như Corgi, Dachshund (Lạp xưởng), Poodle lớn tuổi thường gặp khó khăn hoặc dễ trật khớp khi nhảy lên xuống sofa cao. Sofa Mô-đun Tổ Ấm đi kèm 1 mô-đun đôn bậc thấp thông minh (cao 22cm) đóng vai trò vừa là bậc bước an toàn cho bé và thú cưng, vừa là đệm gác chân thư giãn cho bố mẹ. Toàn bộ ghế bọc da vi sợi EcoPaws™ chống xước và chống thấm tuyệt đối.",
+    "dimensions": "Dài 265cm x Sâu 96cm x Cao 80cm (Kèm đôn bậc thấp 65cm x 55cm x 22cm)",
+    "frame": "Khung gỗ Sồi Nga kết hợp đai thun Ý chịu lực cao",
+    "cushion": "Đệm mút K43 nguyên khối bọc lớp bông kháng khuẩn",
+    "highlights": [
+      "Đi kèm đôn bậc thấp bảo vệ xương khớp cho cún cưng và an toàn cho bé nhỏ",
+      "Da vi sợi EcoPaws™ chống móng cào, không bám lông và chống thấm 100%",
+      "Các mô-đun tháo ghép linh hoạt theo chiều ngang hoặc chữ L",
+      "Tay vịn bo tròn bọc mút dày 6cm êm như gối đầu"
+    ],
+    "featured": false,
+    "badge": "Bảo vệ khớp thú cưng & bé",
+    "rating": 4.9,
+    "reviewCount": 29,
+    "idealFor": "Gia đình nuôi Corgi, Poodle, Lạp xưởng và có bé từ 1–4 tuổi"
+  },
+  {
+    "id": "perfa-15",
+    "slug": "sofa-vang-ho-tay-3-cho-cao-cap",
+    "name": "Sofa Văng Hồ Tây 3 Chỗ Khung Gỗ Sồi Lộ Vân",
+    "price": 19800000,
+    "originalPrice": 22000000,
+    "type": "Sofa văng",
+    "material": "Vải Nhung Tuyết trượt nước AquaShield™",
+    "colors": [
+      { "name": "Xanh rêu Perfa", "hex": "#52624f" },
+      { "name": "Xanh Navy trầm", "hex": "#354656" },
+      { "name": "Kem sữa Yến mạch", "hex": "#e8dfd1" }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "shortDescription": "Khung gỗ sồi tự nhiên vát tròn thủ công bởi nghệ nhân mộc Hà Nội, kết hợp đệm vải AquaShield™ tháo giặt toàn phần.",
+    "description": "Sofa Văng Hồ Tây là sự giao thoa giữa nghề mộc truyền thống Thạch Thất – Hà Nội và phong cách Bắc Âu tối giản. Phần khung đế và tay vịn gỗ sồi tự nhiên được các nghệ nhân mài nhẵn bo tròn từng milimet, phủ dầu sáp ong tự nhiên đạt chuẩn an toàn đồ chơi trẻ em EN71-3 châu Âu. Hệ đệm ngồi và tựa lưng tách rời hoàn toàn, bọc vải AquaShield™ trượt nước giúp việc vệ sinh hay thay đổi màu vỏ áo sofa theo mùa trở nên nhẹ nhàng hơn bao giờ hết.",
+    "dimensions": "Dài 218cm x Sâu 90cm x Cao 82cm",
+    "frame": "100% Gỗ Sồi Nga nguyên khối lộ vân, phủ sáp ong chuẩn EN71-3 an toàn cho trẻ",
+    "cushion": "Đệm mút K43 tách rời hoàn toàn, khóa kéo YKK tháo giặt dễ dàng",
+    "highlights": [
+      "Sơn phủ dầu sáp ong đạt chuẩn EN71-3 an toàn ngay cả khi bé gặm/tiếp xúc",
+      "Có thể đặt mua thêm bộ vỏ áo sofa màu khác để thay đổi theo mùa tại Hà Nội",
+      "Công nghệ trượt nước AquaShield™ chống thấm sữa, trà, cà phê",
+      "Gầm ghế thoáng 16cm cực kỳ thuận tiện cho robot hút bụi và lau nhà"
+    ],
+    "featured": false,
+    "badge": "Thủ công Hà Nội",
+    "rating": 4.9,
+    "reviewCount": 53,
+    "idealFor": "Gia đình yêu vẻ đẹp gỗ tự nhiên mộc mạc, an toàn và bền vững"
+  }
+]

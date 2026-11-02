@@ -1,0 +1,1202 @@
+/* ==========================================================================
+   DNU LEARNING PORTFOLIO — NGUYỄN TUẤN HƯNG (MSV: 2071080075)
+   Design System, Anchor AI WebGL Backdrop & MotionSites Physics Engine
+   ========================================================================== */
+
+:root {
+  /* Core Palette: Anchor AI Deep Void + Electric Blue & Cyan + Dai Nam Orange */
+  --bg-deep: #02040a;
+  --bg-surface: #070d1f;
+  --bg-card: rgba(8, 15, 34, 0.62);
+  --bg-card-hover: rgba(12, 24, 52, 0.78);
+  --bg-glass: rgba(5, 10, 24, 0.76);
+
+  --primary-blue: #2563eb;
+  --primary-cyan: #06b6d4;
+  --primary-glow: rgba(37, 99, 235, 0.45);
+  --cyan-glow: rgba(6, 182, 212, 0.35);
+
+  --dnu-orange: #f37021;
+  --dnu-orange-light: #ff944d;
+  --dnu-orange-glow: rgba(243, 112, 33, 0.35);
+
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+  --accent-purple: #8b5cf6;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --border-subtle: rgba(148, 163, 184, 0.15);
+  --border-highlight: rgba(56, 189, 248, 0.45);
+
+  /* Typography: Unified Montserrat across entire portfolio */
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout & Spacing */
+  --container-max: 1240px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Physics & Transitions */
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  line-height: 1.65;
+  scroll-behavior: auto;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  position: relative;
+  overflow-x: clip;
+}
+
+/* Interactive Silk Aurora & Volumetric Mesh Canvas */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+}
+
+/* Top Scroll Progress Ribbon */
+.scroll-progress-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 1100;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--dnu-orange), var(--primary-cyan), var(--primary-blue));
+  box-shadow: 0 0 12px var(--primary-cyan);
+  transition: width 0.06s linear;
+}
+
+/* ==========================================================================
+   FLOATING GLASS NAVBAR — CRYSTAL-CLEAR iOS DARK LIQUID GLASS
+   ========================================================================== */
+.floating-navbar-wrapper {
+  position: fixed;
+  top: 1.1rem;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  pointer-events: none;
+}
+
+.floating-navbar {
+  position: relative;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.38rem 0.6rem;
+  background: rgba(8, 14, 28, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(16px) saturate(135%);
+  -webkit-backdrop-filter: blur(16px) saturate(135%);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.06),
+    0 12px 30px -6px rgba(0, 0, 0, 0.48);
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.floating-navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.34rem 0.85rem 0.34rem 0.45rem;
+  border-radius: 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.86rem;
+  white-space: nowrap;
+  background: transparent;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  margin-right: 0.2rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  transition: opacity 0.25s ease;
+}
+
+.nav-brand:hover {
+  opacity: 0.88;
+}
+
+.nav-brand img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  list-style: none;
+}
+
+.nav-links li:not(.nav-glass-indicator) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sliding Liquid Glass Lens Indicator (glides between nav items with spring physics) */
+.nav-glass-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: var(--radius-full);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    0 4px 14px -2px rgba(0, 0, 0, 0.35);
+  transform-origin: center center;
+  will-change: transform, width;
+  transition: opacity 0.35s ease;
+}
+
+.nav-glass-indicator.is-ready {
+  opacity: 1;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.38rem 0.72rem;
+  border-radius: var(--radius-full);
+  color: rgba(248, 250, 252, 0.78);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  transition: color 0.35s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  color: #ffffff;
+}
+
+/* Floating Personal Social Links — Top-Right Corner Crystal-Clear Liquid Glass */
+.social-floating-dock {
+  position: fixed;
+  top: 1.15rem;
+  right: 1.5rem;
+  transform: none;
+  z-index: 1002;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.55rem;
+  pointer-events: none;
+}
+
+.social-dock-btn {
+  position: relative;
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: 42px;
+  min-width: 42px;
+  padding: 0 11px;
+  border-radius: var(--radius-full);
+  background: rgba(8, 14, 28, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px) saturate(135%);
+  -webkit-backdrop-filter: blur(16px) saturate(135%);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.06),
+    0 10px 24px -6px rgba(0, 0, 0, 0.45);
+  transition:
+    transform 0.3s var(--ease-spring),
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    gap 0.3s var(--ease-spring),
+    padding 0.3s var(--ease-spring);
+}
+
+.social-dock-btn svg {
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s var(--ease-spring), color 0.25s ease;
+}
+
+.social-dock-label {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  transition: max-width 0.32s var(--ease-spring), opacity 0.25s ease;
+}
+
+.social-dock-btn:hover {
+  gap: 0.5rem;
+  padding: 0 14px;
+  transform: translateY(-2px);
+}
+
+.social-dock-btn:hover .social-dock-label {
+  max-width: 100px;
+  opacity: 1;
+}
+
+.social-dock-btn:hover svg {
+  transform: scale(1.08);
+}
+
+.social-fb:hover {
+  border-color: rgba(147, 197, 253, 0.55);
+  background: rgba(24, 119, 242, 0.24);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+    0 12px 28px -4px rgba(24, 119, 242, 0.38);
+  color: #ffffff;
+}
+
+.social-ig:hover {
+  border-color: rgba(249, 168, 212, 0.55);
+  background: rgba(225, 48, 108, 0.24);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+    0 12px 28px -4px rgba(225, 48, 108, 0.38);
+  color: #ffffff;
+}
+
+.social-tt:hover {
+  border-color: rgba(125, 211, 252, 0.55);
+  background: rgba(0, 242, 254, 0.2);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+    0 12px 28px -4px rgba(0, 242, 254, 0.35);
+  color: #ffffff;
+}
+
+@media (max-width: 1240px) {
+  .social-floating-dock {
+    top: 4.5rem;
+    right: 1.25rem;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+/* Main Content Wrapper */
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.subsection-block {
+  margin-top: 4.5rem;
+}
+
+.subsection-block:first-of-type {
+  margin-top: 2.25rem;
+}
+
+/* Section Headers */
+.section-title {
+  font-size: clamp(1.9rem, 3.4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.subsection-title {
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #ffffff 0%, #bae6fd 48%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
+}
+
+.text-gradient-dnu {
+  background: linear-gradient(135deg, #ffd8b8 0%, #ff8c3b 52%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
+}
+
+/* ==========================================================================
+   iOS DARK LIQUID GLASS CARDS (SMOKY OBSIDIAN TRANSPARENCY & CLEAR LEGIBILITY)
+   ========================================================================== */
+
+.spotlight-card {
+  position: relative;
+  background: rgba(9, 14, 28, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(24px) saturate(105%);
+  -webkit-backdrop-filter: blur(24px) saturate(105%);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.05),
+    0 16px 40px -10px rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.35s ease, background 0.3s ease;
+}
+
+/* Subtle Cursor Spotlight on Hover */
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    440px circle at var(--mouse-x, -1000px) var(--mouse-y, -1000px),
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(56, 189, 248, 0.03) 35%,
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Razor-Thin Diagonal Specular Rim */
+.spotlight-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.06) 40%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.spotlight-card:hover,
+.spotlight-card.is-hovered {
+  background: rgba(13, 20, 38, 0.88);
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.38),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.08),
+    0 22px 48px -10px rgba(0, 0, 0, 0.72);
+}
+
+.spotlight-card:hover::before,
+.spotlight-card.is-hovered::before {
+  opacity: 1;
+}
+
+.spotlight-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Important: Do NOT set transform-style: preserve-3d or parent opacity < 1,
+   which creates a Chromium Backdrop Root and turns backdrop-filter black during scroll! */
+.tilt-card {
+  backface-visibility: hidden;
+  transition:
+    opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+    border-color 0.3s ease,
+    box-shadow 0.35s ease,
+    background 0.3s ease !important;
+}
+
+/* ==========================================================================
+   SLOW, GRACEFUL BIDIRECTIONAL SCROLL REVEAL (UP & DOWN)
+   - Parent .reveal-up animates 2D/3D transform (which never creates a Backdrop Root)
+   - Non-card .reveal-up animates its own opacity
+   - Card-wrapping .reveal-up.reveal-has-card keeps parent opacity: 1 and animates
+     opacity directly on .spotlight-card so backdrop-filter stays crystal-clear
+   ========================================================================== */
+.reveal-up {
+  opacity: 0;
+  transform: translate3d(0, 48px, 0) scale(0.968);
+  transition:
+    opacity 0.28s ease 0s,
+    transform 0.28s ease 0s;
+}
+
+.reveal-up.from-bottom:not(.is-visible) {
+  opacity: 0;
+  transform: translate3d(0, 48px, 0) scale(0.968);
+}
+
+.reveal-up.from-top:not(.is-visible) {
+  opacity: 0;
+  transform: translate3d(0, -48px, 0) scale(0.968);
+}
+
+/* When wrapping a Liquid Glass card, keep parent opacity at 1 so child backdrop-filter samples #bg-canvas */
+.reveal-up.reveal-has-card,
+.reveal-up.reveal-has-card.from-bottom:not(.is-visible),
+.reveal-up.reveal-has-card.from-top:not(.is-visible) {
+  opacity: 1;
+}
+
+.reveal-up.reveal-has-card:not(.is-visible) .spotlight-card {
+  opacity: 0;
+  transition:
+    opacity 0.28s ease 0s,
+    border-color 0.3s ease,
+    box-shadow 0.35s ease,
+    background 0.3s ease !important;
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  transition:
+    opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+    transform 1.25s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s);
+}
+
+.reveal-up.reveal-has-card.is-visible .spotlight-card {
+  opacity: 1;
+  transition:
+    opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+    border-color 0.3s ease,
+    box-shadow 0.35s ease,
+    background 0.3s ease !important;
+}
+
+.split-word {
+  display: inline-block;
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================================
+   TRANG 1: HERO / TRANG BÌA
+   ========================================================================== */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-university-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-md);
+  background: rgba(8, 14, 28, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(16px) saturate(135%);
+  -webkit-backdrop-filter: blur(16px) saturate(135%);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.32),
+    0 10px 24px -8px rgba(0, 0, 0, 0.45);
+  margin-bottom: 1.5rem;
+}
+
+.hero-logo-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero-uni-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-uni-name {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--dnu-orange-light);
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.hero-uni-dept {
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hero-course-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  opacity: 0.78;
+  margin-bottom: 0.75rem;
+}
+
+.hero-main-title {
+  font-size: clamp(2.6rem, 5.2vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.75rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.9), rgba(37, 99, 235, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  box-shadow:
+    inset 0 1.5px 1px 0 rgba(255, 255, 255, 0.55),
+    0 10px 25px -5px var(--primary-glow);
+  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1.5px 1px 0 rgba(255, 255, 255, 0.65),
+    0 14px 30px -5px rgba(6, 182, 212, 0.55);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.65rem;
+  border-radius: var(--radius-full);
+  background: rgba(8, 14, 28, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(16px) saturate(135%);
+  -webkit-backdrop-filter: blur(16px) saturate(135%);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.35),
+    0 10px 24px -6px rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s var(--ease-spring);
+}
+
+.btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Unified Student ID Card Base — High Contrast Legibility on Liquid Glass */
+.student-id-card {
+  padding: 2rem 2.2rem;
+  height: 100%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
+}
+
+.id-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 1.05rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.id-card-title {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7dd3fc;
+}
+
+.id-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.id-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.94rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.id-info-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.id-info-label {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.id-info-value {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: right;
+}
+
+.pride-blockquote {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   TRANG 2: GIỚI THIỆU BẢN THÂN
+   ========================================================================== */
+.about-portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2.25rem;
+}
+
+.about-top-row {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.about-right-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.about-right-stack > .reveal-up {
+  flex: 1;
+  display: flex;
+}
+
+.about-right-stack > .reveal-up > .student-id-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-bottom-row {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.about-bottom-row > .reveal-up {
+  display: flex;
+}
+
+.about-bottom-row > .reveal-up > .student-id-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-small-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.photo-frame {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 0;
+}
+
+.photo-frame.photo-large {
+  max-height: 540px;
+  margin: 0 auto;
+}
+
+.photo-frame.photo-small {
+  max-height: 390px;
+  margin: 0 auto;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s var(--ease-spring);
+}
+
+.photo-frame:hover img {
+  transform: scale(1.04);
+}
+
+/* ==========================================================================
+   BƯỚC 3: TRANG 3 (SWOT), TRANG 4 (NHẬT KÝ THỜI GIAN), TRANG 5 (EISENHOWER)
+   ========================================================================== */
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.code-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.code-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Table inside Student-ID Card */
+.portfolio-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 0.78rem 0.9rem;
+  text-align: left;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-table th {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #cbd5e1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.portfolio-table tr:last-child td {
+  border-bottom: none;
+}
+
+.portfolio-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.portfolio-table tbody tr:hover {
+  background: rgba(56, 189, 248, 0.06);
+}
+
+/* Progress Bars for CV1, CV2, CV3 & Physics Weights */
+.progress-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.42rem;
+}
+
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.9rem;
+}
+
+.progress-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.progress-meta {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--primary-cyan);
+}
+
+.progress-track {
+  width: 100%;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: rgba(148, 163, 184, 0.14);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--primary-blue), var(--primary-cyan));
+  transition: width 1.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.progress-fill.fill-orange {
+  background: linear-gradient(90deg, var(--dnu-orange), var(--dnu-orange-light));
+}
+
+/* Action Footer inside Eisenhower Quadrant */
+.quadrant-action {
+  margin-top: 1.1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--primary-cyan);
+}
+
+/* ==========================================================================
+   BƯỚC 4: TRANG 6 (BÁNH XE MỤC TIÊU), TRANG 7 (SMART), TRANG 8 (THÓI QUEN)
+   ========================================================================== */
+.wheel-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.wheel-svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+#wheel-of-life-svg {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  overflow: visible;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wheel-sector {
+  transition:
+    opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.3s ease,
+    transform 1.15s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: 240px 240px;
+  cursor: pointer;
+}
+
+.wheel-sector:hover,
+.wheel-sector.is-active {
+  filter: brightness(1.18);
+}
+
+.wheel-score-row {
+  cursor: pointer;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.wheel-score-row:hover,
+.wheel-score-row.is-active {
+  background: rgba(56, 189, 248, 0.14);
+}
+
+/* ==========================================================================
+   BƯỚC 6: TRANG 11 (BỮA CƠM 30K), TRANG 12 (AI LOG), TRANG 13 (GIAO TIẾP)
+   ========================================================================== */
+.meal-photos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.landscape-photo-frame {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 0;
+}
+
+.landscape-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease-spring);
+}
+
+.landscape-photo-frame:hover img {
+  transform: scale(1.04);
+}
+
+.prompt-box {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  background: rgba(2, 6, 18, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: #93c5fd;
+  line-height: 1.6;
+}
+
+.comm-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.comm-layout .landscape-photo-frame {
+  height: 100%;
+  min-height: 320px;
+  aspect-ratio: auto;
+}
+
+/* ==========================================================================
+   BƯỚC 7: TRANG 14 (PHẢN TƯ CUỐI HỌC PHẦN & THANK YOU)
+   ========================================================================== */
+.thank-you-banner {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+.thank-you-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  text-shadow: none !important;
+  filter: drop-shadow(0 4px 22px rgba(56, 189, 248, 0.42));
+}
+
+.thank-you-title .text-gradient-blue {
+  background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 45%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
+}
+
+.thank-you-title .text-gradient-dnu {
+  background: linear-gradient(135deg, #fff1e6 0%, #ff9f5a 48%, #7dd3fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
+}
+
+.footer-credit {
+  text-align: center;
+  padding: 2.5rem 1rem 3.5rem;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 980px) {
+  .hero-grid,
+  .about-top-row,
+  .about-bottom-row,
+  .grid-2col,
+  .grid-3col,
+  .wheel-layout,
+  .comm-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    padding-top: 6.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-small-photos,
+  .meal-photos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-id-card {
+    padding: 1.5rem;
+  }
+
+  .id-info-row {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .id-info-value {
+    text-align: left;
+  }
+}
