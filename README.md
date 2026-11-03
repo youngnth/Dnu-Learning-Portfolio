@@ -40,16 +40,16 @@ Portfolio được xây dựng theo đúng cấu trúc đề cương hướng d�
 
 ---
 
-## 🚀 HƯỚNG DẪN BẬT GITHUB PAGES (XEM TRỰC TIẾP TRÊN WEB)
+## 🚀 XEM TRỰC TIẾP TRÊN WEB (LIVE DEMO)
 
-Để xem trang web trực tiếp qua đường link công khai mà không cần tải code về máy:
+### Cách 1: Triển khai qua Vercel (Khuyên dùng)
+1. Đăng nhập [Vercel](https://vercel.com) bằng tài khoản GitHub.
+2. Bấm **Add New...** > **Project** > Chọn Import repo **`Dnu-Learning-Portfolio`**.
+3. Bấm **Deploy**. Vercel sẽ tự động cung cấp đường link website chính thức tốc độ cao.
 
-1. Vào tab **Settings** của repository này trên GitHub: `https://github.com/youngnth/Dnu-Learning-Portfolio/settings`
+### Cách 2: Bật GitHub Pages
+1. Vào tab **Settings** của repository: `https://github.com/youngnth/Dnu-Learning-Portfolio/settings`
 2. Chọn mục **Pages** ở menu bên trái.
-3. Tại phần **Build and deployment > Branch**:
-   - Chọn nhánh: **`main`**
-   - Chọn thư mục: **`/(root)`**
-   - Bấm **Save**.
-4. Chờ khoảng 1 - 2 phút, GitHub sẽ cung cấp đường link website chính thức tại:
-   👉 **`https://youngnth.github.io/Dnu-Learning-Portfolio/`**
+3. Tại phần **Build and deployment > Branch**: Chọn nhánh **`main`**, thư mục **`/(root)`** rồi bấm **Save**.
+4. Website sẽ chạy tại: **`https://youngnth.github.io/Dnu-Learning-Portfolio/`**
 
